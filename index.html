@@ -1,0 +1,21 @@
+<!doctype html>
+<html ng-app="mainApp">
+<head>
+</head>
+<body>
+    <p>Header</p>
+
+    <h2>This is the Main App.</h2>
+
+    NAV: <a ui-sref="child">Child App</a>
+
+    <br/><br/>
+    <div ui-view></div>
+
+    <p>Footer</p>
+
+    <script src="/bower_components/angular/angular.min.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+</html>
