@@ -10,4 +10,12 @@ childApp.config(function($stateProvider, $urlRouterProvider) {
         console.log('ChildAppCtrl loaded');
       }
     })
+
+    .state('child.anotherChild', {
+      url: 'anotherChild',
+      template: 'this is another child!',
+      controller: function($scope) {
+        console.log('AnotherChildAppCtrl loaded');
+      }
+    })
 });
