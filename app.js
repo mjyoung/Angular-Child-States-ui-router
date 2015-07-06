@@ -5,29 +5,12 @@ var mainApp = angular.module('mainApp', [
 
 mainApp.config(function($stateProvider, $urlRouterProvider) {
 
-  // $urlRouterProvider.otherwise('/home');
-
   $stateProvider
     .state('main', {
       url: '/',
-      templateUrl: '/home-content.html',
+      templateUrl: '/main-content.html',
       controller: function($scope) {
-        console.log('HomeCtrl loaded');
+        console.log('MainCtrl loaded');
       }
     });
-});
-
-
-var childApp = angular.module('mainApp.childApp', []);
-
-childApp.config(function($stateProvider, $urlRouterProvider) {
-
-  $stateProvider
-    .state('child', {
-      url: 'child',
-      templateUrl: 'child.html',
-      controller: function($scope) {
-        console.log('ChildAppCtrl loaded');
-      }
-    })
 });

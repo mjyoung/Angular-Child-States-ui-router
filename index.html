@@ -3,19 +3,17 @@
 <head>
 </head>
 <body>
-    <p>Header</p>
+    <h3>Header</h3>
 
-    <h2>This is the Main App.</h2>
+    NAV: <a ui-sref="main">Main App</a> &nbsp; | &nbsp; <a ui-sref="child">Child App</a>
 
-    NAV: <a ui-sref="child">Child App</a>
-
-    <br/><br/>
     <div ui-view></div>
 
-    <p>Footer</p>
+    <h3>Footer</h3>
 
     <script src="/bower_components/angular/angular.min.js"></script>
     <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="/app.js"></script>
+    <script src="/childApp.js"></script>
 </body>
 </html>
